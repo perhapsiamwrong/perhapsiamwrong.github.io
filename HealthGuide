@@ -46,11 +46,18 @@
     .buy-button:hover {
       background-color: #c59b84;
     }
-    .preview {
+    .preview-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .preview-gallery img {
       width: 100%;
-      max-width: 500px;
+      max-width: 230px;
       border-radius: 10px;
-      margin-top: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
@@ -65,8 +72,6 @@
   <header>
     <h1>HealthGuide</h1>
     <p class="tagline">Let me be your personal health guide</p>
-    <img src="Preview.png" alt="HealthGuide preview" class="preview" />
-    <br />
     <a href="https://payhip.com/b/n4Wxc" class="buy-button">Buy Now – Only $1</a>
   </header>
 
@@ -79,6 +84,17 @@
       <li>♻️ Reusable digital format</li>
       <li>🖨 Printable or use as PDF in GoodNotes</li>
     </ul>
+  </section>
+
+  <section class="section">
+    <h2>Planner Preview</h2>
+    <div class="preview-gallery">
+      <img src="1.png" alt="Planner page 1">
+      <img src="2.png" alt="Planner page 2">
+      <img src="3.png" alt="Planner page 3">
+      <img src="4.png" alt="Planner page 4">
+      <img src="5.png" alt="Planner page 5">
+    </div>
   </section>
 
   <section class="section">
