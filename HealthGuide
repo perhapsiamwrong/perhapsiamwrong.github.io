@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HealthGuide - Digital Wellness Planner</title>
   <style>
     body {
@@ -65,8 +65,8 @@
   <header>
     <h1>HealthGuide</h1>
     <p class="tagline">Let me be your personal health guide</p>
-    <img src="your-preview-image.jpg" alt="HealthGuide preview" class="preview">
-    <br>
+    <img src="Preview.png" alt="HealthGuide preview" class="preview" />
+    <br />
     <a href="https://payhip.com/b/n4Wxc" class="buy-button">Buy Now – Only $1</a>
   </header>
 
