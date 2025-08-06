@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HealthGuide</title>
   <link rel="icon" type="image/png" href="favicon.png">
 
@@ -148,6 +148,11 @@
       transition: background 0.3s ease;
     }
 
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
     .buy-button:hover {
       background-color: #a1a193;
     }
@@ -213,7 +218,41 @@
         flex-direction: column;
         align-items: center;
       }
-    }
+    
+    @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .main, .about, .buy-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .planner-wrapper {
+    width: 90%;
+  }
+
+  .features-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .brain-banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .socials {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .buy-btn {
+    width: 80%;
+  }
+}
   </style>
 </head>
 
