@@ -3,109 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HealthGuide - Digital Wellness Planner</title>
+  <title>HealthGuide - Wellness Planner</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Horizon&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background-color: #FAF0DC;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      color: #2D2D2D;
+      background-color: #8d8e85;
+      font-family: Arial, sans-serif;
+      color: #000000;
     }
+
     header {
+      background-color: #b6b6a7;
+      padding: 40px 20px 20px;
       text-align: center;
-      padding: 50px 20px 30px;
     }
+
+    .brain-img {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
     h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+      font-family: 'Alice', serif;
+      font-size: 2.5rem;
+      margin: 0;
     }
+
     .tagline {
-      font-size: 1.2rem;
-      font-style: italic;
-      color: #555;
+      font-family: 'Alice', serif;
+      font-size: 1rem;
+      margin-top: 5px;
     }
-    .section {
-      padding: 30px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .features li {
-      margin-bottom: 10px;
-    }
-    .buy-button {
-      display: inline-block;
-      padding: 14px 30px;
-      background-color: #DAB49D;
-      color: white;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      margin-top: 25px;
-    }
-    .buy-button:hover {
-      background-color: #c59b84;
-    }
-    .preview-gallery {
+
+    .main {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
+      align-items: flex-start;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .planner-img {
+      width: 220px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: rotate(-5deg);
+    }
+
+    .features-box {
+      background-color: #b6b6a7;
+      border-radius: 40px;
+      padding: 20px 30px;
+      max-width: 400px;
+    }
+
+    .features-box h2 {
+      font-family: 'Copperplate Gothic', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .features-box p {
+      font-family: 'Alice', serif;
+      font-size: 1rem;
+      margin: 8px 0;
+    }
+
+    .about-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .about-section h2 {
+      font-family: 'Copperplate Gothic', sans-serif;
+      font-size: 1.2rem;
+    }
+
+    .about-section p {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.5;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    .buy-button {
+      background-color: #b6b6a7;
+      color: #000000;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      font-family: 'Copperplate Gothic', sans-serif;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
       margin-top: 30px;
+      transition: background 0.3s ease;
     }
-    .preview-gallery img {
-      width: 100%;
-      max-width: 230px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    .buy-button:hover {
+      background-color: #a1a193;
     }
+
+    .buy-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .more-coming {
+      text-align: center;
+      padding: 40px 20px;
+      font-family: 'Horizon', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
+
     footer {
       text-align: center;
-      padding: 30px;
+      font-family: Arial, sans-serif;
       font-size: 0.9rem;
-      color: #777;
+      padding: 20px;
+      background-color: #b6b6a7;
+    }
+
+    footer a {
+      color: #000;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .main {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
+    <img src="brain.png" alt="Brain" class="brain-img">
     <h1>HealthGuide</h1>
     <p class="tagline">Let me be your personal health guide</p>
-    <a href="https://payhip.com/b/n4Wxc" class="buy-button">Buy Now – Only $1</a>
   </header>
 
-  <section class="section">
-    <h2>What's Inside?</h2>
-    <ul class="features">
-      <li>💧 Track your water intake, meals, screen time, and mood</li>
-      <li>⚡ Instant download — start today</li>
-      <li>🔗 Hyperlinked pages (great for iPad)</li>
-      <li>♻️ Reusable digital format</li>
-      <li>🖨 Printable or use as PDF in GoodNotes</li>
-    </ul>
-  </section>
+  <div class="main">
+    <img src="1.png" alt="Planner Cover" class="planner-img">
 
-  <section class="section">
-    <h2>Planner Preview</h2>
-    <div class="preview-gallery">
-      <img src="1.png" alt="Planner page 1">
-      <img src="2.png" alt="Planner page 2">
-      <img src="3.png" alt="Planner page 3">
-      <img src="4.png" alt="Planner page 4">
-      <img src="5.png" alt="Planner page 5">
+    <div class="features-box">
+      <h2>WHAT WILL YOU GET?</h2>
+      <p>✓ A daily planner to track:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Water intake</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Meals</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Screen time</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Mood</p>
+      <p>✓ Hyperlinked pages for easy navigation (great for iPad)</p>
+      <p>✓ Reusable digital format (use again and again)</p>
+      <p>✓ PDF file compatible with GoodNotes, Notability & more</p>
+      <p>✓ Also printable if you prefer paper</p>
     </div>
-  </section>
+  </div>
 
-  <section class="section">
-    <h2>About the Planner</h2>
+  <div class="about-section">
+    <h2>ABOUT ME</h2>
     <p>
-      This 10-day planner helps you build simple health habits without guilt or pressure. It includes mindful check-ins, space for reflection, and a clean design so you can focus on what matters: your wellness.
+      I'm a Psychotherapist. I wanted to create a simple guide + a planner.
+      I believe a planner should not exhaust you, but work on your body.
+      Make your routine better in just 10 days with me.
+      My planner will help you live a healthy life without pressure.
+      It will motivate you, making you smarter both mentally and physically in just a few days.
     </p>
-  </section>
+    <img src="profile.png" alt="Your Profile" class="profile-img">
+  </div>
+
+  <div class="buy-section">
+    <a href="https://payhip.com/b/n4Wxc">
+      <button class="buy-button">Buy Now $3</button>
+    </a>
+  </div>
+
+  <div class="more-coming">
+    MORE COMING SOON
+  </div>
 
   <footer>
-    &copy; 2025 HealthGuide Planner. All rights reserved.
+    X @butperhapsman |
+    Instagram <a href="https://instagram.com/perhapsiamwrong">@perhapsiamwrong</a> |
+    Facebook <a href="https://facebook.com/perhapsiamwrong">perhapsiamwrong</a>
   </footer>
 
 </body>
