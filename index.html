@@ -50,11 +50,28 @@
       gap: 30px;
     }
 
-    .planner-img {
-      width: 220px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transform: rotate(-5deg);
-    }
+    .planner-wrapper {
+  position: relative;
+  width: 230px;
+  height: auto;
+}
+
+.planner-bg {
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotate(-7deg);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.planner-img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
     .features-box {
       background-color: #b6b6a7;
@@ -155,27 +172,30 @@
 <body>
 
   <header>
-    <img src="brain.png" alt="Brain" class="brain-img">
+   <img src="bcc5a4.png" alt="Brain" class="brain-img">
     <h1>HealthGuide</h1>
     <p class="tagline">Let me be your personal health guide</p>
   </header>
 
   <div class="main">
-    <img src="1.png" alt="Planner Cover" class="planner-img">
-
-    <div class="features-box">
-      <h2>WHAT WILL YOU GET?</h2>
-      <p>✓ A daily planner to track:</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Water intake</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Meals</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Screen time</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Mood</p>
-      <p>✓ Hyperlinked pages for easy navigation (great for iPad)</p>
-      <p>✓ Reusable digital format (use again and again)</p>
-      <p>✓ PDF file compatible with GoodNotes, Notability & more</p>
-      <p>✓ Also printable if you prefer paper</p>
-    </div>
+  <div class="planner-wrapper">
+    <img src="11.png" class="planner-bg" alt="Curved Planner">
+    <img src="1.png" class="planner-img" alt="Main Planner">
   </div>
+
+  <div class="features-box">
+    <h2>WHAT WILL YOU GET?</h2>
+    <p>✓ A daily planner to track:</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;• Water intake</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;• Meals</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;• Screen time</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;• Mood</p>
+    <p>✓ Hyperlinked pages for easy navigation (great for iPad)</p>
+    <p>✓ Reusable digital format (use again and again)</p>
+    <p>✓ PDF file compatible with GoodNotes, Notability & more</p>
+    <p>✓ Also printable if you prefer paper</p>
+  </div>
+</div>
 
   <div class="about-section">
     <h2>ABOUT ME</h2>
@@ -186,7 +206,7 @@
       My planner will help you live a healthy life without pressure.
       It will motivate you, making you smarter both mentally and physically in just a few days.
     </p>
-    <img src="profile.png" alt="Your Profile" class="profile-img">
+   <img src="my.jfif" alt="Your Profile" class="profile-img">
   </div>
 
   <div class="buy-section">
