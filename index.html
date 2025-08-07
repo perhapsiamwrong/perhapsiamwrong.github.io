@@ -31,33 +31,32 @@
     }
 
     .brain-banner {
-  width: auto;
-  height: 280px; /* was 220px */
-  margin-top: 10px;
-}
+      width: auto;
+      height: 280px;
+      margin-top: 10px;
+    }
 
-  h1 {
-  font-family: 'Alice', serif;
-  text-align: center;
-  font-size: 3.5rem;
-  margin-top: 10px;
-  margin-bottom: 5px; /* ↓ reduce space below h1 */
-}
+    h1 {
+      font-family: 'Alice', serif;
+      text-align: center;
+      font-size: 3.5rem;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
 
-.divider {
-  width: 60%;
-  height: 2px;
-  background-color: #000000;
-  margin: 2px auto 10px auto; /* ↓ reduce top space */
-}
+    .divider {
+      width: 60%;
+      height: 2px;
+      background-color: #000000;
+      margin: 2px auto 10px auto;
+    }
 
-
-.tagline {
-  font-family: 'Alice', serif;
-  font-size: 1rem;
-  margin-top: 5px;
-  text-align: center;
-}
+    .tagline {
+      font-family: 'Alice', serif;
+      font-size: 1rem;
+      margin-top: 5px;
+      text-align: center;
+    }
 
     .main {
       display: flex;
@@ -68,47 +67,48 @@
       gap: 30px;
     }
 
-  .features-box {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  background-color: #b6b6a7;
-  border-radius: 40px;
-  padding: 30px;
-  max-width: 700px;
-  flex-wrap: wrap;
-}
+    .features-box {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      background-color: #b6b6a7;
+      border-radius: 40px;
+      padding: 30px;
+      max-width: 700px;
+      flex-wrap: wrap;
+    }
 
-.features-text {
-  flex: 1;
-  min-width: 250px;
-}
+    .features-text {
+      flex: 1;
+      min-width: 250px;
+    }
 
-.planner-wrapper {
-  position: relative;
-  width: 230px;
-  flex-shrink: 0;
-  z-index: 2;
-  margin-left: -10px;
-  margin-top: -10px;
-}
+    .planner-wrapper {
+      position: relative;
+      width: 230px;
+      flex-shrink: 0;
+      z-index: 2;
+      margin-left: -10px;
+      margin-top: -10px;
+    }
 
-.planner-bg {
-  width: 100%;
-  position: absolute;
-  top: 20px;
-  left: -25px;
-  transform: rotate(-8deg);
-  opacity: 0.6;
-  z-index: 1;
-}
+    .planner-bg {
+      width: 100%;
+      position: absolute;
+      top: 20px;
+      left: -25px;
+      transform: rotate(-8deg);
+      opacity: 0.6;
+      z-index: 1;
+    }
 
-.planner-img {
-  width: 100%;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    .planner-img {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
     .features-box h2 {
       font-family: 'Copperplate Gothic', sans-serif;
       font-size: 1.2rem;
@@ -160,11 +160,6 @@
       transition: background 0.3s ease;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    
     .buy-button:hover {
       background-color: #a1a193;
     }
@@ -190,166 +185,160 @@
       background-color: #b6b6a7;
     }
 
-    .socials a {
-      margin: 0 10px;
-      color: #000000;
-      text-decoration: none;
-      font-size: 1.5rem;
-    }
-
-    .socials a:hover {
-      color: #333;
-    }
-
     .socials {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 20px;
-}
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 20px;
+    }
 
-.socials a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #000000;
-  font-family: Arial, sans-serif;
-  font-size: 0.95rem;
-}
+    .socials a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+    }
 
-.socials a img {
-  margin-right: 8px;
-  width: 26px;
-  height: 26px;
-}
-    
-   @media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
+    .socials a img {
+      margin-right: 8px;
+      width: 26px;
+      height: 26px;
+    }
 
-  .main {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0;
-    padding: 10px 0;
-  }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-  .planner-wrapper {
-    width: 100%;
-    margin: 0;
-    left: 0;
-  }
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
 
-  .planner-bg {
-    left: 0;
-    top: 10px;
-    transform: none;
-  }
+      .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        padding: 10px 0;
+      }
 
-  .features-box {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 10px;
-    padding: 16px 6px;
-  }
+      .planner-wrapper {
+        width: 100%;
+        margin: 0;
+        left: 0;
+      }
 
-  .brain-banner {
-    width: 100%;
-    height: auto;
-  }
+      .planner-bg {
+        left: 0;
+        top: 10px;
+        transform: none;
+      }
 
-  .buy-button {
-    width: 90%;
-    min-width: 180px;
-    font-size: 1rem;
-  }
+      .features-box {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        padding: 16px 6px;
+      }
 
-  h1 {
-    font-size: 2rem;
-  }
+      .brain-banner {
+        width: 100%;
+        height: auto;
+      }
 
-  .features-box p,
-  .about-section p {
-    font-size: 0.95rem;
-  }
-}
-    
+      .buy-button {
+        width: 90%;
+        min-width: 180px;
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .features-box p,
+      .about-section p {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 
 <body>
- <div class="container">
-  <div class="banner">
-    <img src="bcc5a42.png" alt="Brain" class="brain-banner">
-  </div>
-
- <h1>HealthGuide</h1>
-<div class="divider"></div>
-<p class="tagline">Let me be your personal health guide</p>
-
-  <div class="main">
-   <div class="features-box">
-    <div class="planner-wrapper">
-     <img src="11.png" class="planner-img back" alt="Background Planner">
-     <img src="1.png" class="planner-img front" alt="Front Planner">
+  <div class="container">
+    <div class="banner">
+      <img src="bcc5a42.png" alt="Brain" class="brain-banner">
     </div>
-  <div class="features-text">
-  <h2>WHAT WILL YOU GET?</h2>
-  <p>✓ A daily planner to track:</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Water intake</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Meals</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Screen time</p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Mood</p>
-  <p>✓ Hyperlinked pages for easy navigation (great for iPad)</p>
-  <p>✓ Reusable digital format (use again and again)</p>
-  <p>✓ PDF file compatible with GoodNotes, Notability & more</p>
-  <p>✓ Also printable if you prefer paper</p>
-</div>
-  </div>
 
-  <div class="about-section">
-    <h2>ABOUT ME</h2>
-    <p>
-      I'm a Psychotherapist. I wanted to create a simple guide + a planner.
-      I believe a planner should not exhaust you, but work on your body.
-      Make your routine better in just 10 days with me.
-      My planner will help you live a healthy life without pressure.
-      It will motivate you, making you smarter both mentally and physically in just a few days.
-    </p>
-    <img src="my.jfif" alt="Your Profile" class="profile-img">
-  </div>
+    <h1>HealthGuide</h1>
+    <div class="divider"></div>
+    <p class="tagline">Let me be your personal health guide</p>
 
-  <div class="buy-section">
-    <a href="https://payhip.com/b/n4Wxc" target="_blank">
-      <button class="buy-button">Buy Now $3</button>
-    </a>
-  </div>
+    <div class="main">
+      <div class="features-box">
+        <div class="planner-wrapper">
+          <img src="11.png" class="planner-bg" alt="Curved Planner">
+          <img src="1.png" class="planner-img" alt="Main Planner">
+        </div>
+        <div class="features-text">
+          <h2>WHAT WILL YOU GET?</h2>
+          <p>✓ A daily planner to track:</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;• Water intake</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;• Meals</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;• Screen time</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;• Mood</p>
+          <p>✓ Hyperlinked pages for easy navigation (great for iPad)</p>
+          <p>✓ Reusable digital format (use again and again)</p>
+          <p>✓ PDF file compatible with GoodNotes, Notability & more</p>
+          <p>✓ Also printable if you prefer paper</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="more-coming">
-    MORE COMING SOON
-  </div>
+    <div class="about-section">
+      <h2>ABOUT ME</h2>
+      <p>
+        I'm a Psychotherapist. I wanted to create a simple guide + a planner.
+        I believe a planner should not exhaust you, but work on your body.
+        Make your routine better in just 10 days with me.
+        My planner will help you live a healthy life without pressure.
+        It will motivate you, making you smarter both mentally and physically in just a few days.
+      </p>
+      <img src="my.jfif" alt="Your Profile" class="profile-img">
+    </div>
 
- <footer>
-  <div class="socials">
-    <a href="https://x.com/butperhapsman?t=4JP0-O9JtzEHJu4uRYwT7Q&s=09" target="_blank">
-      <img src="https://img.icons8.com/color/48/twitterx--v1.png" alt="X">
-      <span>@butperhapsman</span>
-    </a>
-    <a href="https://www.instagram.com/perhapsiamwrong?igsh=MTE0cm9zY2l5bHMzNQ==" target="_blank">
-      <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram">
-      <span>@perhapsiamwrong</span>
-    </a>
-    <a href="https://www.facebook.com/share/1A64DgCYaQ/" target="_blank">
-      <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
-      <span>@perhapsiamwrong</span>
-    </a>
+    <div class="buy-section">
+      <a href="https://payhip.com/b/n4Wxc" target="_blank">
+        <button class="buy-button">Buy Now $3</button>
+      </a>
+    </div>
+
+    <div class="more-coming">
+      MORE COMING SOON
+    </div>
+
+    <footer>
+      <div class="socials">
+        <a href="https://x.com/butperhapsman?t=4JP0-O9JtzEHJu4uRYwT7Q&s=09" target="_blank">
+          <img src="https://img.icons8.com/color/48/twitterx--v1.png" alt="X">
+          <span>@butperhapsman</span>
+        </a>
+        <a href="https://www.instagram.com/perhapsiamwrong?igsh=MTE0cm9zY2l5bHMzNQ==" target="_blank">
+          <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram">
+          <span>@perhapsiamwrong</span>
+        </a>
+        <a href="https://www.facebook.com/share/1A64DgCYaQ/" target="_blank">
+          <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
+          <span>@perhapsiamwrong</span>
+        </a>
+      </div>
+      <p>&copy; 2025 Health Guide. All rights reserved.</p>
+    </footer>
   </div>
-   <p>&copy; 2025 Health Guide. All rights reserved.</p>
-  </footer>
- </div> <!-- End container -->
 </body>
 </html>
