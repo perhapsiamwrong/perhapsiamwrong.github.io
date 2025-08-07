@@ -68,38 +68,42 @@
       gap: 30px;
     }
 
-   .planner-wrapper {
+  .features-box {
+  background-color: #b6b6a7;
+  border-radius: 40px;
+  padding: 30px;
+  max-width: 700px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
   position: relative;
-  width: 230px;
-  height: auto;
-  margin-left: -20px;
-  z-index: 2; /* this puts it above the feature box */
+  flex-wrap: wrap;
 }
 
-    .planner-bg {
+.planner-wrapper {
+  position: relative;
+  width: 230px;
+  flex-shrink: 0;
+  z-index: 2;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.planner-bg {
   width: 100%;
   position: absolute;
   top: 20px;
-  left: -30px; /* pushed more to the left */
+  left: -25px;
   transform: rotate(-8deg);
   opacity: 0.6;
   z-index: 1;
 }
 
-    .planner-img {
-      width: 100%;
-      position: relative;
-      z-index: 2;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-   .features-box {
-  background-color: #b6b6a7;
-  border-radius: 40px;
-  padding: 20px 30px;
-  max-width: 800px;   /* increase width */
+.planner-img {
+  width: 100%;
   position: relative;
-  z-index: 0;          /* behind planner-wrapper */
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
     .features-box h2 {
       font-family: 'Copperplate Gothic', sans-serif;
@@ -290,17 +294,22 @@
     </div>
 
     <div class="features-box">
-      <h2>WHAT WILL YOU GET?</h2>
-      <p>✓ A daily planner to track:</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Water intake</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Meals</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Screen time</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;• Mood</p>
-      <p>✓ Hyperlinked pages for easy navigation (great for iPad)</p>
-      <p>✓ Reusable digital format (use again and again)</p>
-      <p>✓ PDF file compatible with GoodNotes, Notability & more</p>
-      <p>✓ Also printable if you prefer paper</p>
-    </div>
+  <div class="planner-wrapper">
+    <img src="11.png" class="planner-bg" alt="Curved Planner">
+    <img src="1.png" class="planner-img" alt="Main Planner">
+  </div>
+
+  <h2>WHAT WILL YOU GET?</h2>
+  <p>✓ A daily planner to track:</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Water intake</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Meals</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Screen time</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;• Mood</p>
+  <p>✓ Hyperlinked pages for easy navigation (great for iPad)</p>
+  <p>✓ Reusable digital format (use again and again)</p>
+  <p>✓ PDF file compatible with GoodNotes, Notability & more</p>
+  <p>✓ Also printable if you prefer paper</p>
+</div>
   </div>
 
   <div class="about-section">
