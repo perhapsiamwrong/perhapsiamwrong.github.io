@@ -222,21 +222,31 @@
     padding: 10px;
   }
 
-  .main,
-  .about-section,
-  .buy-section {
+  .main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 0;
+    padding: 10px 0;
   }
 
   .planner-wrapper {
-    width: 90%;
+    width: 100%;
+    margin: 0;
+    left: 0;
+  }
+
+  .planner-bg {
+    left: 0;
+    top: 10px;
+    transform: none;
   }
 
   .features-box {
     width: 100%;
-    margin-top: 20px;
+    max-width: 100%;
+    margin-top: 10px;
+    padding: 16px 6px;
   }
 
   .brain-banner {
@@ -244,13 +254,10 @@
     height: auto;
   }
 
-  .socials {
-    flex-direction: column;
-    gap: 15px;
-  }
-
   .buy-button {
-    width: 80%;
+    width: 90%;
+    min-width: 180px;
+    font-size: 1rem;
   }
 
   h1 {
