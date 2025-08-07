@@ -36,19 +36,21 @@
   margin-top: 10px;
 }
 
-   h1 {
+  h1 {
   font-family: 'Alice', serif;
   text-align: center;
   font-size: 3.5rem;
   margin-top: 10px;
+  margin-bottom: 5px; /* ↓ reduce space below h1 */
 }
 
 .divider {
   width: 60%;
   height: 2px;
   background-color: #000000;
-  margin: 3px auto 10px auto;  /* Less space above the line */
+  margin: 2px auto 10px auto; /* ↓ reduce top space */
 }
+
 
 .tagline {
   font-family: 'Alice', serif;
@@ -66,12 +68,13 @@
       gap: 30px;
     }
 
-    .planner-wrapper {
-      position: relative;
-      width: 230px;
-      height: auto;
-      margin-left: -20px;
-    }
+   .planner-wrapper {
+  position: relative;
+  width: 230px;
+  height: auto;
+  margin-left: -20px;
+  z-index: 2; /* this puts it above the feature box */
+}
 
     .planner-bg {
   width: 100%;
@@ -90,13 +93,14 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .features-box {
-      background-color: #b6b6a7;
-      border-radius: 40px;
-      padding: 20px 30px;
-      max-width: 400px;
-    }
-
+   .features-box {
+  background-color: #b6b6a7;
+  border-radius: 40px;
+  padding: 20px 30px;
+  max-width: 800px;   /* increase width */
+  position: relative;
+  z-index: 0;          /* behind planner-wrapper */
+}
     .features-box h2 {
       font-family: 'Copperplate Gothic', sans-serif;
       font-size: 1.2rem;
@@ -263,7 +267,7 @@
 </head>
 
 <body>
-
+ <div class="container">
   <div class="banner">
     <img src="bcc5a42.png" alt="Brain" class="brain-banner">
   </div>
@@ -331,6 +335,6 @@
   </div>
    <p>&copy; 2025 Health Guide. All rights reserved.</p>
   </footer>
-
+ </div> <!-- End container -->
 </body>
 </html>
