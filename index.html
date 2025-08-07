@@ -42,6 +42,11 @@
     }
 
     /* ----------  TITLE & TAGLINE ---------- */
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     h1 {
       font-family: "Alice", serif;
       font-size: 2.2rem;
@@ -57,7 +62,6 @@
       font-family: "Alice", serif;
       font-size: 0.95rem;
       margin-bottom: 25px;
-      text-align: center;
     }
 
     /* ----------  MAIN / FEATURES ---------- */
@@ -242,9 +246,11 @@
     </div>
 
     <!-- TITLE -->
-    <h1>HealthGuide</h1>
-    <div class="divider"></div>
-    <p class="tagline">Let me be your personal health guide</p>
+    <div class="title-wrapper">
+      <h1>HealthGuide</h1>
+      <div class="divider"></div>
+      <p class="tagline">Let me be your personal health guide</p>
+    </div>
 
     <!-- MAIN -->
     <div class="main">
